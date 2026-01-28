@@ -438,86 +438,107 @@ const Index = () => {
               Свяжитесь с нами
             </p>
             
-            <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className="max-w-6xl mx-auto space-y-8">
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-[#2E8B57]">Контактная информация</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-[#2E8B57]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name="MapPin" className="text-[#2E8B57]" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#2E8B57]">Адрес</p>
+                        <p className="text-gray-600">125009, г. Москва, ул. Тверская, д. 1, офис 505</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-[#4682B4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name="Phone" className="text-[#4682B4]" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#4682B4]">Телефон</p>
+                        <p className="text-gray-600">+7 (495) 123-45-67</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-[#2E8B57]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name="Mail" className="text-[#2E8B57]" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#2E8B57]">Email</p>
+                        <p className="text-gray-600">info@ecotech-progress.ru</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 bg-[#4682B4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <Icon name="Globe" className="text-[#4682B4]" size={20} />
+                      </div>
+                      <div>
+                        <p className="font-medium text-[#4682B4]">Сайт</p>
+                        <p className="text-gray-600">www.ecotech-progress.ru</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-[#2E8B57]">Написать нам</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <form className="space-y-4">
+                      <div>
+                        <input 
+                          type="text" 
+                          placeholder="Ваше имя" 
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
+                        />
+                      </div>
+                      <div>
+                        <input 
+                          type="email" 
+                          placeholder="Email" 
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
+                        />
+                      </div>
+                      <div>
+                        <textarea 
+                          placeholder="Сообщение" 
+                          rows={4}
+                          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
+                        />
+                      </div>
+                      <Button className="w-full bg-[#2E8B57] hover:bg-[#236b43]">
+                        <Icon name="Send" size={18} className="mr-2" />
+                        Отправить
+                      </Button>
+                    </form>
+                  </CardContent>
+                </Card>
+              </div>
+
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-[#2E8B57]">Контактная информация</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-[#2E8B57]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="MapPin" className="text-[#2E8B57]" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#2E8B57]">Адрес</p>
-                      <p className="text-gray-600">125009, г. Москва, ул. Тверская, д. 1, офис 505</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-[#4682B4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="Phone" className="text-[#4682B4]" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#4682B4]">Телефон</p>
-                      <p className="text-gray-600">+7 (495) 123-45-67</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-[#2E8B57]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="Mail" className="text-[#2E8B57]" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#2E8B57]">Email</p>
-                      <p className="text-gray-600">info@ecotech-progress.ru</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-[#4682B4]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon name="Globe" className="text-[#4682B4]" size={20} />
-                    </div>
-                    <div>
-                      <p className="font-medium text-[#4682B4]">Сайт</p>
-                      <p className="text-gray-600">www.ecotech-progress.ru</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-[#2E8B57]">Написать нам</CardTitle>
+                  <CardTitle className="text-[#2E8B57]">Как нас найти</CardTitle>
+                  <CardDescription>ул. Тверская, д. 1, офис 505, Москва</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-4">
-                    <div>
-                      <input 
-                        type="text" 
-                        placeholder="Ваше имя" 
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
-                      />
-                    </div>
-                    <div>
-                      <input 
-                        type="email" 
-                        placeholder="Email" 
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
-                      />
-                    </div>
-                    <div>
-                      <textarea 
-                        placeholder="Сообщение" 
-                        rows={4}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2E8B57]"
-                      />
-                    </div>
-                    <Button className="w-full bg-[#2E8B57] hover:bg-[#236b43]">
-                      <Icon name="Send" size={18} className="mr-2" />
-                      Отправить
-                    </Button>
-                  </form>
+                  <div className="w-full h-[400px] rounded-lg overflow-hidden">
+                    <iframe
+                      src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d7f0e4b5c6a3d2f1e0c9b8a7f6e5d4c&amp;source=constructor"
+                      width="100%"
+                      height="400"
+                      frameBorder="0"
+                      className="w-full h-full"
+                      title="Яндекс Карта - Офис ЭкоТех-Прогресс"
+                    ></iframe>
+                  </div>
                 </CardContent>
               </Card>
             </div>
